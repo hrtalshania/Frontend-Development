@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* color: white ; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+    color: white ;
+}
+body.Light{
+    background-color: #ffffff;
+    color: #000000;
+}
+.container{
+    position: relative;
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #212121;
+    position: relative;
+    color: white ;
+    /* background: linear-gradient(to bottom, #00bfff 0%, #ff63b1 100%); */
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 0px 17px 3px rgb(255, 255, 255); 
+    box-shadow: 2px 0px 17px 3px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock.Light{
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: 2px 0px 17px 3px rgb(0, 0, 0); 
+    box-shadow: 2px 0px 17px 3px rgb(0, 0, 0);
+    color: #000000;
+}
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+.clock b{
+    color: white ;
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--boxAfterBackColor,rgb(255, 255, 255));;
+    border-radius: 50%;
+    z-index: 2;
+}
+.hand{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: flex-end;
+}
+.clock b.Light{
+    color: #000000;
+}
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: 5px;
+    height: var(--h);
+    border-radius: 8px;
+}
+.clock_digital{
+    margin-top: 20px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 0px 17px 3px rgb(255, 255, 255); 
+    box-shadow: 2px 0px 17px 3px rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: x-large;
+    color: white ;
+    /* background: linear-gradient(to bottom, #00bfff 0%, #ff63b1 100%); */
+}
+.clock_digital.Light{
+    border: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: 2px 0px 17px 3px rgb(0, 0, 0); 
+    box-shadow: 2px 0px 17px 3px rgb(0, 0, 0);
+    color: #000000;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    color: white ;
+    font-weight: bold;
+}
+.title.Light{
+    color: #000000;
+}
+.clock_digital_value{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: white ;
+    font-weight: bold;
+}
+.clock_digital_value.Light{
+    color: rgb(0, 0, 0) ;
+}
+.mode_switch{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 0px 17px 3px rgb(255, 255, 255); 
+    box-shadow: 2px 0px 17px 3px rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white ;
+    /* background: linear-gradient(to bottom, #00bfff 0%, #ff63b1 100%); */
+
+}
+.mode_switch.Light{
+    border: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: 2px 0px 17px 3px rgb(0, 0, 0); 
+    box-shadow: 2px 0px 17px 3px rgb(0, 0, 0);
+    color: #000000;
+}

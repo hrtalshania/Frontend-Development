@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRT Projects - Project Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .header h1 {
+      color: #fff;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+    }
+    .header h1 span {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 15px;
+      color: #fff;
+      font-size: 1.8rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #667eea;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+    }
+    .card-header {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+    .card-header h2 {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .card-body {
+      padding: 25px;
+    }
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .tech-badge {
+      background: rgba(102, 126, 234, 0.2);
+      color: #a0a0ff;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .tech-badge i {
+      font-size: 0.9rem;
+    }
+    .card-body p {
+      color: #ddd;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer h3 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .tech-item {
+      color: #aaa;
+      font-size: 2.5rem;
+      transition: transform 0.3s, color 0.3s;
+      cursor: default;
+    }
+    .tech-item:hover {
+      transform: scale(1.2);
+      color: #667eea;
+    }
+    .tech-item span {
+      display: block;
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+      .social-links a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1><span>HRT</span> Projects</h1>
+    <p>Showcasing my web development projects</p>
+    <div class="social-links">
+      <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h2><i class="fas fa-clock"></i> P1 - Analog Clock</h2>
+      </div>
+      <div class="card-body">
+        <div class="tech-stack">
+          <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+          <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+        </div>
+        <p>A beautiful analog clock with digital display, light/dark mode toggle, and smooth rotating hands showing hour, minute, and second in real-time.</p>
+        <a href="./P1-analog-clock/index.html" class="btn">Open Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><i class="fas fa-music"></i> P2 - Music Player</h2>
+      </div>
+      <div class="card-body">
+        <div class="tech-stack">
+          <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+          <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+        </div>
+        <p>A responsive music player with playlist support, play/pause controls, previous/next navigation, and album art display with custom styling.</p>
+        <a href="./P2-music-player/index.html" class="btn">Open Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><i class="fas fa-calculator"></i> P3 - Calculator</h2>
+      </div>
+      <div class="card-body">
+        <div class="tech-stack">
+          <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+          <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+        </div>
+        <p>A functional calculator with basic arithmetic operations, responsive design, and clean user interface for everyday calculations.</p>
+        <a href="./P3-Calulator/index.html" class="btn">Open Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><i class="fas fa-tasks"></i> P4 - To-Do List</h2>
+      </div>
+      <div class="card-body">
+        <div class="tech-stack">
+          <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+          <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+        </div>
+        <p>A task management app to add, check, and delete tasks. Data persists in localStorage, keeping your list saved across sessions.</p>
+        <a href="./P4-To-Do-List/todolist.html" class="btn">Open Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><i class="fas fa-university"></i> P5 - Responsive Site</h2>
+      </div>
+      <div class="card-body">
+        <div class="tech-stack">
+          <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+          <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="tech-badge"><i class="fab fa-font-awesome"></i> Font Awesome</span>
+        </div>
+        <p>A fully responsive university website with navigation menu, campus sections, facilities, testimonials, and mobile-friendly layout.</p>
+        <a href="./P5-Responsive-site/index.html" class="btn">Open Project</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3>Technologies Used</h3>
+    <div class="tech-icons">
+      <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+      <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+      <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+      <div class="tech-item"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+      <div class="tech-item"><i class="fab fa-font-awesome"></i><span>Font Awesome</span></div>
+    </div>
+  </div>
+</body>
+</html>
